@@ -1,21 +1,257 @@
 <!DOCTYPE html>
+<!--
+  TODO: fix last-child border problem
+  TODO: lägg till MORE TO COME till projekt OM det blir ojämnt antal på raderna
+  TODO: offset på skills på dattorskärm och uppåt
+
+-->
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <!-- Font Awesome CDN -->
-  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <!-- Bootstrap 4.0.0 -->
   <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Montserrat Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
+<body>
+  <!-- NAVBAR SECTION -->
+  <nav id="nav" class="navbar navbar-dark navbar-expand-md bg-dark fixed-top py-3">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" data-target="#navbarNav" data-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto align-items-center">
+          <li class="nav-item">
+            <a href="#tjänster-section" class="nav-link linkMeny">Projekt</a>
+          </li>
+          <li class="nav-item">
+            <a href="projekt-section.html" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="om-mig-section.html" class="nav-link">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero-section">
+    <div class="dark-overlay d-flex justify-content-center align-items-center">
+      <div class="legend-inner pt-4">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center text-white">
+              <img src="img/joel-rudsberg-profilbild.jpg" alt="Joel Rudsberg profilbild headshot" class="img-fluid rounded-circle mb-3" id="profilbild">
+              <h1 class="mb-3 display-4">Hej, jag bygger hemsidor och annat spännande. Jag letar internship sommaren 2018 i Göteborg.</h1>
+              <a href="#contact-section" class="btn btn-outline-info btn-lg text-white">
+                Kontakta Mig
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT SECTION -->
+  <section id="project-section" class="pb-5">
+    <div class="container text-white">
+      <div class="info-header mb-5 text-center">
+        <h2 class="text-center text-white display-4 d-block pt-5">Tidigare Arbeten</h2>
+        <p id="subtext" class="mt-4 text-white text-center">Kollektion av projekt jag hittils jobbat med. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis ab, quidem optio praesentium odio amet!</p>
+      </div>
+      <div class="row project pb-5 mt-5">
+        <div class="col-md-6 order-md-2">
+          <div class="d-flex h-100 w-100 flex-column justify-content-center">
+            <img class="img-fluid mx-auto" src="img/mockup-tintin-large-transparent.png" alt="Responsiv och mobilanpassad hemsida av café tintins hemsida.">
+          </div>
+        </div>
+        <div class="col-md-6 order-md-1 ">
+          <div class="d-flex h-100 w-100 flex-column justify-content-center text-center">
+            <h3 class="display-4">Café Tintin</h3>
+            <p class="mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil assumenda, maxime natus aliquid minima error accusantium! Beatae atque vel sint doloribus! Voluptas, ab deleniti.</p>
+            <a href="http://tintin.coffee/" target="_blank"><button class="btn btn-info btn-lg mt-3">Besök Hemsida</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="row testimony pb-5 pt-5">
+        <div class="col text-center py-3">
+          <blockquote class="quote blockquote">
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum molestias vel, impedit, ipsum voluptas."
+          </blockquote>
+          <div class="pt-3">
+            <img src="img/joel-rudsberg-profilbild.jpg" class="img-fluid rounded-circle">
+            <small class="ml-2">Kira Anderzén, CEO, Café Tintin</small>
+          </div>
+        </div>
+      </div>
+      <div class="row project pb-5 mt-5">
+        <div class="col-md-6 order-md-1">
+          <div class="d-flex h-100 w-100 flex-column justify-content-center">
+            <img class="img-fluid mx-auto" src="img/mockup-tintin-large-transparent.png" alt="Responsiv och mobilanpassad hemsida av café tintins hemsida.">
+          </div>
+        </div>
+        <div class="col-md-6 order-md-2">
+          <div class="d-flex h-100 w-100 flex-column justify-content-center text-center">
+            <h3 class="display-4">OKAY Shop Engelberg</h3>
+            <p class="mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil assumenda, maxime natus aliquid minima error accusantium! Beatae atque vel sint doloribus! Voluptas, ab deleniti.</p>
+            <a href="http://tintin.coffee/" target="_blank"><button class="btn btn-info btn-lg mt-3">Besök Hemsida</button></a>
+          </div>
+        </div>
+      </div>
+      <div id="testimony" class="row testimony pb-5 pt-5">
+        <div class="col text-center py-3">
+          <blockquote class="quote blockquote">
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum molestias vel, impedit, ipsum voluptas."
+          </blockquote>
+          <div class="pt-3">
+            <img src="img/joel-rudsberg-profilbild.jpg" class="img-fluid rounded-circle">
+            <small class="ml-2">Dani Friedli, Ägare, Okay Shop Engelberg</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONAL PROJECT SECTION -->
+  <section id="pp-section">
+    <div class="container">
+      <div class="info-header mb-5 text-center">
+        <h2 class="text-center text-white display-4 d-block pt-5">Personliga Projekt</h2>
+        <p id="subtext" class="mt-4 mb-3 text-white text-center">När jag inte jobbar åt någon kund utvecklar jag mina egna personliga projekt. Syftet är att uttöka mina kunskaper och ha roligt.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 text-center mb-5">
+          <img class="mb-3" src="img/todo.PNG" alt="Todo application">
+          <div class="title">To-Do Applikation</div>
+          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident aliquid nemo repudiandae, unde voluptas facere explicabo est. Voluptate, repudiandae, libero.</p>
+          <button class="btn btn-block btn-lg btn-info mt-3">Testa!</button>
+        </div>
+        <div class="col-md-4 col-sm-6 text-center mb-5">
+          <img class="mb-3" src="img/bokmärkare.PNG" alt="Bookmarker application">
+          <div class="title">Bokmärkar Applikation</div>
+          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident aliquid nemo repudiandae, unde voluptas facere explicabo est. Voluptate, repudiandae, libero.</p>
+          <button class="btn btn-block btn-lg btn-info mt-3">Testa!</button>
+        </div>
+        <div class="col-md-4 col-sm-6 text-center mb-5">
+          <img class="mb-3" src="img/canvas.PNG" alt="Partikelsimulation med användning av canvas">
+          <div class="title">Partikelsimulation</div>
+          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident aliquid nemo repudiandae, unde voluptas facere explicabo est. Voluptate, repudiandae, libero.</p>
+          <button class="btn btn-block btn-lg btn-info mt-3">Testa!</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills-section" class="pb-5">
+    <div class="container">
+      <div class="info-header mb-5 text-center">
+        <h2 class="text-center text-white display-4 d-block pt-5">Färdigheter</h2>
+        <p id="subtext" class="mt-4 mb-3 text-white text-center">Vilka språk kan jag? Har jag jobbat med några frameworks? Hur mycket kan jag i vardera delar? Här ger jag en visuelt svar...</p>
+      </div>
+      <div class="row mb-3">
+        <div class="col text-center">
+          <p class="lead text-white">Så här fungerar graderingen:</p>
+          <div class="progress" style="height: 25px">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Nybörjare</div>
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Cool</div>
+            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Ninja</div>
+            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Rockstjärna*</div>
+          </div>
+          <p id="star-text" class="text-muted text-center mt-2">*Självutnämnd</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="skill mb-4">
+            <div class="lead text-white mb-2 text-center">HTML/CSS</div>
+            <div class="progress" style="height: 15px">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+            </div>
+          </div>
+
+          <div class="skill mb-4">
+            <div class="lead text-white mb-2 text-center">JavaScript</div>
+            <div class="progress" style="height: 15px">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <div class="skill mb-4">
+            <div class="lead text-white mb-2 text-center">Bootstrap 4</div>
+            <div class="progress" style="height: 15px">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="skill mb-4">
+            <div class="lead text-white mb-2 text-center">PHP</div>
+            <div class="progress" style="height: 15px">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
+            </div>
+          </div>
+
+          <div class="skill mb-4">
+            <div class="lead text-white mb-2 text-center">Java</div>
+            <div class="progress" style="height: 15px">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+            </div>
+          </div>
+
+          <div class="skill mb-4">
+            <div class="lead text-white mb-2 text-center">Matlab</div>
+            <div class="progress" style="height: 15px">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact-section" class="pt-4">
+    <div class="container">
+      <div class="info-header pb-5 text-center">
+        <h2 class="text-center display-4 d-block pt-5">Kontakta Mig</h2>
+        <p id="subtext" class="mt-4 mb-3 text-center lead">Behöver ni en kommande Chalmerist som IT intern sommaren 2018?</p>
+        <p class="lead text-center">Jag gör även frilansarbete. Berätta om dina projekt och idéer!</p>
+        <button href="mailto:rudsberg@live.se" class="mt-2 btn btn-lg btn-outline-success mb-3">Maila</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <section id="footer-section" class="py-4">
+    <div class="container">
+      <div class="row text-center mt-5">
+        <div class="col text-white">
+          <p class="text-muted">Handgjord av mig &copy; 2018.</p>
+          <div class="d-flex justify-content-between mb-2">
+            <a href="https://www.facebook.com/joel.rudsberg" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+            <a href="https://github.com/rudsberg" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+            <a href="https://www.instagram.com/joelrudsberg/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
