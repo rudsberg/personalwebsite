@@ -140,6 +140,7 @@ h1 {
   color: #FED766;
   transition: all ease-in-out 350ms;
   transform: scaleX(1.15);
+  cursor: pointer;
 }
 
 
