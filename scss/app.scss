@@ -1,0 +1,210 @@
+$nav-color: #343A40;
+$primary-color: #36595e;
+$secondary-color: #466F75;
+$contact-color: #FED766;
+$footer-color: #252A30;
+$button-color: #FED766;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 2.2rem !important;
+}
+
+a button {
+  cursor: pointer;
+}
+
+button {
+  border-radius: 14px !important;
+  border-width: 2px !important;
+  &:hover {
+    transition: all ease-in-out 350ms !important;
+    transform: scaleX(1.15) !important;
+    cursor: pointer;
+  }
+}
+
+#nav {
+  background-color: $nav-color;
+}
+
+.info-header {
+  min-width: 280px;
+  max-width: 520px;
+  margin: auto;
+  border-bottom: 1px #ddd solid;
+}
+
+/* ==================== HERO SECTION ==================== */
+
+#hero-section {
+  background-image: url("../img/mountain-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+  button {
+    border-color: $button-color;
+    color: white;
+    &:hover {
+      color: black !important;
+      background-color: $button-color;
+    }
+  }
+  img {
+    width: 180px;
+  }
+  .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.67);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 700px;
+  }
+  .col {
+    max-width: 460px;
+  }
+}
+
+/* ================== New Section ====================== */
+
+#project-section {
+  background-color: $primary-color;
+
+  button {
+    border-color: $button-color;
+    color: white;
+    &:hover {
+      color: black;
+      background-color: $button-color;
+    }
+  }
+  .project {
+    box-shadow: 0px 24px 3px -24px #ddd;
+  }
+  .testimony {
+    box-shadow: 0px 24px 3px -24px #ddd;
+  }
+  .testimony blockquote {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  #testimony {
+    box-shadow: none !important;
+  }
+  .testimony img {
+    width: 70px;
+  }
+}
+
+
+/* ================== New Section ====================== */
+
+#pp-section {
+  background-color: $secondary-color;
+
+  button {
+    border-color: $button-color;
+    color: white;
+    &:hover {
+      color: black;
+      background-color: $button-color;
+    }
+  }
+  .row {
+    position: relative;
+  }
+  img {
+    border-radius: 10px;
+    opacity: 0.3;
+    width: 230px;
+    height: 230px;
+  }
+  button {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+  .title {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+  }
+}
+
+/* ================== Skills Section ====================== */
+
+#star-text {
+  font-size: 0.65rem;
+}
+
+#skills-section {
+  background-color: $primary-color;
+}
+
+/* ================== Contact Section ====================== */
+
+#contact-section {
+  background-color: $contact-color;
+
+  .info-header {
+    min-width: 280px;
+    max-width: 600;
+    margin: auto;
+    border-bottom: none;
+    h2 {
+      font-size: 2.6rem;
+      font-weight: 600;
+    }
+    button {
+      color: #252A30;
+      border-color: #252A30;
+      width: 170px;
+      &:hover {
+        background-color: #252A30;
+        color: #FED766;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/* ================== Footer Section ====================== */
+
+#footer-section {
+  background-color: $footer-color;
+  .row .d-flex {
+    max-width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  i {
+    color: #A6A8AA;
+    &:hover {
+      color: white;
+      transition: all ease-in-out 300ms;
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+  #pp-section .title {
+    font-size: 1.38rem;
+  }
+}
+
+@media (min-width: 1200px) {}
