@@ -9,8 +9,9 @@ a button {
   cursor: pointer; }
 
 button {
-  border-radius: 14px !important;
-  border-width: 2px !important; }
+  border-radius: 20px !important;
+  border-width: 2px !important;
+  font-weight: 500 !important; }
   button:hover {
     transition: all ease-in-out 350ms !important;
     transform: scaleX(1.15) !important;
@@ -23,7 +24,15 @@ button {
   min-width: 280px;
   max-width: 520px;
   margin: auto;
+  margin-top: 15px;
   border-bottom: 1px #ddd solid; }
+
+.info-header h2 {
+  font-size: 2.4rem;
+  font-weight: 600; }
+
+.info-header p {
+  font-weight: 300; }
 
 /* ==================== HERO SECTION ==================== */
 #hero-section {
@@ -41,7 +50,7 @@ button {
   #hero-section img {
     width: 180px; }
   #hero-section .dark-overlay {
-    background-color: rgba(0, 0, 0, 0.67);
+    background-color: rgba(0, 0, 0, 0.45);
     position: absolute;
     top: 0;
     left: 0;
@@ -52,13 +61,21 @@ button {
 
 /* ================== New Section ====================== */
 #project-section {
-  background-color: #36595e; }
+  background-color: #FFF; }
+  #project-section h3 {
+    font-size: 2rem;
+    font-weight: 600; }
   #project-section button {
     border-color: #FED766;
-    color: white; }
+    color: #252A30;
+    font-size: 1rem;
+    font-weight: 500; }
     #project-section button:hover {
-      color: black;
-      background-color: #FED766; }
+      color: #FED766;
+      background-color: #252A30;
+      border-color: #252A30; }
+  #project-section .project-text {
+    max-width: 430px; }
   #project-section .project {
     box-shadow: 0px 24px 3px -24px #ddd; }
   #project-section .testimony {
@@ -73,18 +90,40 @@ button {
 
 /* ================== New Section ====================== */
 #pp-section {
-  background-color: #466F75; }
+  background-color: #EEE;
+  /*
+  .image {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    background-size: contain;
+  }
+  .layer {
+    background-color: rgba(248, 247, 216, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #todo {
+    background: url('../img/todo.PNG');
+  }
+  */ }
   #pp-section button {
     border-color: #FED766;
-    color: white; }
+    color: #252A30;
+    font-size: 1rem;
+    font-weight: 500; }
     #pp-section button:hover {
-      color: black;
-      background-color: #FED766; }
+      color: #FED766;
+      background-color: #252A30;
+      border-color: #252A30; }
   #pp-section .row {
     position: relative; }
   #pp-section img {
     border-radius: 10px;
-    opacity: 0.3;
+    opacity: 0.4;
     width: 230px;
     height: 230px; }
   #pp-section button {
@@ -97,7 +136,6 @@ button {
     right: 0;
     margin: 0 auto;
     font-size: 1.2rem;
-    color: white;
     font-weight: 500; }
 
 /* ================== Skills Section ====================== */
@@ -105,7 +143,7 @@ button {
   font-size: 0.65rem; }
 
 #skills-section {
-  background-color: #36595e; }
+  background-color: #FFF; }
 
 /* ================== Contact Section ====================== */
 #contact-section {
