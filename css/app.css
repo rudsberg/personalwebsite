@@ -2,10 +2,10 @@ body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased; }
 
-h1 {
-  font-size: 2.2rem !important; }
-
 a button {
+  cursor: pointer; }
+
+a:hover {
   cursor: pointer; }
 
 button {
@@ -16,9 +16,6 @@ button {
     transition: all ease-in-out 350ms !important;
     transform: scaleX(1.15) !important;
     cursor: pointer; }
-
-#nav {
-  background-color: #343A40; }
 
 .info-header {
   min-width: 280px;
@@ -40,7 +37,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 700px; }
+  min-height: 100vh; }
   #hero-section button {
     border-color: #FED766;
     color: white; }
@@ -48,20 +45,38 @@ button {
       color: black !important;
       background-color: #FED766; }
   #hero-section img {
-    width: 180px; }
+    width: 240px; }
   #hero-section .dark-overlay {
     background-color: rgba(0, 0, 0, 0.45);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 700px; }
+    min-height: 100vh; }
   #hero-section .col {
-    max-width: 460px; }
+    max-width: 600px;
+    position: relative;
+    top: -40px; }
+  #hero-section h1 {
+    font-size: 1.65rem;
+    font-weight: 600;
+    line-height: 1.2; }
+  #hero-section span {
+    font-size: 1.35rem;
+    font-weight: 500;
+    line-height: 1.2; }
 
 /* ================== New Section ====================== */
 #project-section {
   background-color: #FFF; }
+  #project-section .info-header a {
+    border-bottom: 1px #4288DC dotted;
+    font-weight: 400; }
+    #project-section .info-header a:hover {
+      color: #FED766;
+      text-decoration: none;
+      border-bottom: 1px #FED766 dotted;
+      transition: all ease-in-out 400ms; }
   #project-section h3 {
     font-size: 2rem;
     font-weight: 600; }
@@ -98,17 +113,6 @@ button {
     height: 230px;
     background-size: contain;
   }
-  .layer {
-    background-color: rgba(248, 247, 216, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  #todo {
-    background: url('../img/todo.PNG');
-  }
   */ }
   #pp-section button {
     border-color: #FED766;
@@ -119,8 +123,35 @@ button {
       color: #FED766;
       background-color: #252A30;
       border-color: #252A30; }
+  #pp-section a:hover {
+    text-decoration: none !important; }
   #pp-section .row {
     position: relative; }
+  #pp-section .row .col-sm-6 {
+    max-width: 300px;
+    margin: 0 auto; }
+  #pp-section .holder {
+    width: 230px;
+    height: 230px;
+    border-radius: 10px; }
+  #pp-section .background {
+    width: 230px;
+    height: 230px;
+    background-image: url("../img/todo.PNG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px; }
+  #pp-section .layer {
+    background-color: rgba(95, 146, 203, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; }
+  #pp-section #todo {
+    background: url("../img/todo.PNG"); }
   #pp-section img {
     border-radius: 10px;
     opacity: 0.4;
@@ -179,7 +210,16 @@ button {
       transition: all ease-in-out 300ms;
       transform: scale(1.1); }
 
+@media (min-width: 576px) {
+  #contact-section .info-header {
+    max-width: 630px; } }
+@media (min-width: 768px) {
+  #project-section .project-text p, #project-section .project-text h3, #project-section .project-text a {
+    text-align: left; } }
 @media (min-width: 992px) {
+  #hero-section .col {
+    top: -40px; }
+
   #pp-section .title {
     font-size: 1.38rem; } }
 

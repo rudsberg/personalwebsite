@@ -10,11 +10,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1 {
-  font-size: 2.2rem !important;
+a button {
+  cursor: pointer;
 }
 
-a button {
+a:hover {
   cursor: pointer;
 }
 
@@ -27,10 +27,6 @@ button {
     transform: scaleX(1.15) !important;
     cursor: pointer;
   }
-}
-
-#nav {
-  background-color: $nav-color;
 }
 
 .info-header {
@@ -57,7 +53,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 700px;
+  min-height: 100vh;
   button {
     border-color: $button-color;
     color: white;
@@ -67,7 +63,7 @@ button {
     }
   }
   img {
-    width: 180px;
+    width: 240px;
   }
   .dark-overlay {
     background-color: rgba(0, 0, 0, 0.45);
@@ -75,10 +71,22 @@ button {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 700px;
+    min-height: 100vh;
   }
   .col {
-    max-width: 460px;
+    max-width: 600px;
+    position: relative;
+    top: -40px;
+  }
+  h1 {
+    font-size: 1.65rem;
+    font-weight: 600;
+    line-height: 1.2
+  }
+  span {
+    font-size: 1.35rem;
+    font-weight: 500;
+    line-height: 1.2;
   }
 }
 
@@ -87,7 +95,18 @@ button {
 #project-section {
   background-color: $primary-color;
 
-
+  .info-header {
+    a {
+      border-bottom: 1px #4288DC dotted;
+      font-weight: 400;
+      &:hover {
+        color: $button-color;
+        text-decoration: none;
+        border-bottom: 1px $button-color dotted;
+        transition: all ease-in-out 400ms;
+      }
+    }
+  }
   h3 {
     font-size: 2rem;
     font-weight: 600;
@@ -141,8 +160,15 @@ button {
       border-color: $footer-color;
     }
   }
+  a:hover {
+    text-decoration: none !important;
+  }
   .row {
     position: relative;
+  }
+  .row .col-sm-6 {
+    max-width: 300px;
+    margin: 0 auto;
   }
   /*
   .image {
@@ -151,18 +177,33 @@ button {
     height: 230px;
     background-size: contain;
   }
+  */
+  .holder {
+    width: 230px;
+    height: 230px;
+    border-radius: 10px;
+  }
+  .background {
+    width: 230px;
+    height: 230px;
+    background-image: url('../img/todo.PNG');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px;
+  }
   .layer {
-    background-color: rgba(248, 247, 216, 0.7);
+    background-color: rgba(95, 146, 203, 0.7);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 10px;
   }
   #todo {
     background: url('../img/todo.PNG');
   }
-  */
   img {
     border-radius: 10px;
     opacity: 0.4;
@@ -240,11 +281,26 @@ button {
   }
 }
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+  #contact-section .info-header {
+    max-width: 630px;
+  }
+}
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  #project-section {
+    .project-text p, .project-text h3, .project-text a {
+      text-align: left;
+    }
+  }
+}
 
 @media (min-width: 992px) {
+  #hero-section {
+    .col {
+      top: -40px;
+    }
+  }
   #pp-section .title {
     font-size: 1.38rem;
   }

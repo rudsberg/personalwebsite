@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Canvas Project</title>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <canvas></canvas>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Settings</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeModalBtn">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label>Select Number of Particles</label>
+              <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="number-particles">
+            </div>
+            <div class="form-group">
+              <label>Apply Gravity?</label>
+              <input type="text" placeholder="Yes or No" id="gravitySelect">
+            </div>
+            <div class="form-group">
+              <label>What color scheme?</label>
+              <input type="text" placeholder="Default, Organ, Retro or Amino" id="colorSelect">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="closeBtn" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" id="submitBtn" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- Bootstrap js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
