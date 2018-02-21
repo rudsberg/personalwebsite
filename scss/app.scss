@@ -46,10 +46,19 @@ button {
   font-weight: 300;
 }
 
+.disabled:hover {
+  cursor: default;
+  transition: none !important;
+  transform: none !important;
+  background-color: inherit !important;
+  border-color: $button-color !important;
+  color: black !important;
+}
+
 /* ==================== HERO SECTION ==================== */
 
 #hero-section {
-  background-image: url("../img/mountain-background.jpg");
+  background-image: url("../img/desktop3.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -62,11 +71,8 @@ button {
       background-color: $button-color;
     }
   }
-  img {
-    width: 240px;
-  }
   .dark-overlay {
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
     top: 0;
     left: 0;
@@ -74,19 +80,22 @@ button {
     min-height: 100vh;
   }
   .col {
-    max-width: 600px;
+    max-width: 650px;
     position: relative;
     top: -40px;
   }
-  h1 {
-    font-size: 1.65rem;
-    font-weight: 600;
-    line-height: 1.2
+  img {
+    width: 200px;
   }
-  span {
-    font-size: 1.35rem;
+  h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+  span, a {
+    font-size: 1.15rem;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.35;
   }
 }
 
@@ -149,6 +158,18 @@ button {
 #pp-section {
   background-color: $secondary-color;
 
+  .info-header {
+    a {
+      border-bottom: 1px #4288DC dotted;
+      font-weight: 400;
+      &:hover {
+        color: $button-color;
+        text-decoration: none;
+        border-bottom: 1px $button-color dotted;
+        transition: all ease-in-out 400ms;
+      }
+    }
+  }
   button {
     border-color: $button-color;
     color: $footer-color;
@@ -170,15 +191,8 @@ button {
     max-width: 300px;
     margin: 0 auto;
   }
-  /*
-  .image {
-    position: relative;
-    width: 230px;
-    height: 230px;
-    background-size: contain;
-  }
-  */
   .holder {
+    margin: 0 auto;
     width: 230px;
     height: 230px;
     border-radius: 10px;
@@ -186,14 +200,10 @@ button {
   .background {
     width: 230px;
     height: 230px;
-    background-image: url('../img/todo.PNG');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position: relative;
     border-radius: 10px;
+    position: relative;
   }
   .layer {
-    background-color: rgba(95, 146, 203, 0.7);
     position: absolute;
     top: 0;
     left: 0;
@@ -201,14 +211,29 @@ button {
     height: 100%;
     border-radius: 10px;
   }
-  #todo {
+  #todo-background {
     background: url('../img/todo.PNG');
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
-  img {
-    border-radius: 10px;
-    opacity: 0.4;
-    width: 230px;
-    height: 230px;
+  #todo-layer {
+    background-color: rgba(37, 42, 48, 0.7);
+  }
+  #particle-background {
+    background: url('../img/canvas.PNG');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  #particle-layer {
+    background-color: rgba(95, 146, 203, 0.7);
+  }
+  #schack-background {
+    background: url('../img/schack.PNG');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  #schack-layer {
+    background-color: rgba(206, 110, 85, 0.7);
   }
   button {
     max-width: 260px;
@@ -282,6 +307,21 @@ button {
 }
 
 @media (min-width: 576px) {
+  #hero-section {
+    h1 {
+      font-size: 1.65rem;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+    span, a {
+      font-size: 1.35rem;
+      font-weight: 500;
+      line-height: 1.35;
+    }
+    img {
+      width: 240px;
+    }
+  }
   #contact-section .info-header {
     max-width: 630px;
   }

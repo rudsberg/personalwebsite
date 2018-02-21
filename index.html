@@ -44,7 +44,7 @@
     <div class="container">
       <div class="info-header mb-5 text-center">
         <h2 class="text-center display-4 d-block pt-5">Tidigare Arbeten</h2>
-        <p class="mt-4 text-center">En kollektion av projekt jag jobbat med där slutprodukten används av företag. Vill  ni se mer exempel är ni hjärtligt välkomna att <a href="mailto:rudsberg@live.se">emaila</a> mig.</p>
+        <p class="mt-4 text-center">En kollektion av projekt jag jobbat med där slutprodukten dagligen används av företag.</p>
       </div>
       <div class="row project pb-5 mt-5">
         <div class="col-md-6 order-md-2">
@@ -55,7 +55,7 @@
         <div class="col-md-6 order-md-1 ">
           <div class="project-text d-flex h-100 w-100 flex-column justify-content-center text-center mr-auto">
             <h3 class="display-4">Café Tintin</h3>
-            <p class="mx-auto text-muted">Café Tintin är ett välkänt café i Göteborgs som öppnade för 25 år sedan. Tintins föregående hemsida var uråldrad, ej responsibel och gav en medioker användarupplevelse. Med hjälp av Bootstrap handkodade jag Tintins nya sida utåt.</p>
+            <p class="mx-auto text-muted">Café Tintin är ett välkänt café i Göteborg som öppnade för 25 år sedan. Tintins föregående hemsida var uråldrad, ej responsibel och gav en medioker användarupplevelse. Med hjälp av Bootstrap handkodade jag Tintins nya ansikte utåt.</p>
             <a href="http://tintin.coffee/" target="_blank"><button class="btn btn-outline-info btn-lg mt-3">Besök Hemsida</button></a>
           </div>
         </div>
@@ -67,21 +67,21 @@
           </blockquote>
           <div class="pt-3">
             <img src="img/joel-rudsberg-profilbild.jpg" class="img-fluid rounded-circle">
-            <small class="ml-2">Kira Anderzén, CEO, Café Tintin</small>
+            <small class="ml-2">Kira Anderzén, VD, Café Tintin</small>
           </div>
         </div>
       </div>
       <div class="row project pb-5 mt-5">
         <div class="col-md-6 order-md-1">
           <div class="d-flex h-100 w-100 flex-column justify-content-center">
-            <img class="img-fluid mx-auto" src="img/mockup-tintin-large-transparent.png" alt="Responsiv och mobilanpassad hemsida av café tintins hemsida.">
+            <img class="mb-3 img-fluid mx-auto" src="img/okay-mockup-transparent.jpg" alt="Responsiv och mobilanpassad hemsida av okay shops hemsida.">
           </div>
         </div>
         <div class="col-md-6 order-md-2">
           <div class="project-text d-flex h-100 w-100 flex-column justify-content-center text-center ml-auto">
             <h3 class="display-4">Freeride HQ Engelberg</h3>
-            <p class="mx-auto text-muted">Även känt som Okay Shop, är en kultförklarad skidbutik i svenskhålet Engelberg i de Schweiziska alperna. Under min säsong fick jag äran att ge skidfantasterna en bättre upplevelse på Danis hemsida.</p>
-            <a href="http://tintin.coffee/" target="_blank"><button class="btn btn-outline-info btn-lg mt-3">Besök Hemsida</button></a>
+            <p class="mx-auto text-muted">Även känt som Okay Shop, är en kultförklarad skidbutik i svensktillhållet Engelberg i de Schweiziska alperna. Under min säsong fick jag äran att ge skidfantasterna en bättre upplevelse på Danis hemsida. Sidan kommer vara live inom några dagar.</p>
+            <a class="disabled" href="http://tintin.coffee/" target="_blank" title="Publiceras om några dagar!"><button class="disabled btn btn-outline-info btn-lg mt-3" disabled>Besök Hemsida</button></a>
           </div>
         </div>
       </div>
@@ -104,25 +104,38 @@
     <div class="container">
       <div class="info-header mb-5 text-center">
         <h2 class="text-center display-4 d-block pt-5">Personliga Projekt</h2>
-        <p class="mt-4 mb-3 text-center">När jag inte jobbar åt någon kund eller pluggar lär jag mig nya språk och teknologier genom att bygga projekt. Här visas några exempel av de senaste.</p>
+        <p class="mt-4 mb-3 text-center">När jag inte jobbar åt någon kund eller pluggar lär jag mig nya programmeringsspråk och teknologier genom att bygga projekt. Vill ni se mer exempel är ni hjärtligt välkomna att <a href="mailto:rudsberg@live.se">emaila</a> mig.</p>
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-6 text-center mb-5">
-          <div class="holder">
-            <div class="background">
-              <div class="layer"></div>
+          <div class="holder mb-3">
+            <div id="todo-background" class="background">
+              <div id="todo-layer" class="layer"></div>
             </div>
           </div>
-          <!--<img class="mb-3" src="img/todo.PNG" alt="Todo application">-->
-          <div class="title">To-Do Applikation</div>
-          <p class="text-muted">En simpel applikation byggd med vanilla JavaScript som är gjort för mobilanvändare. Jag använde mig av the module pattern. Localstorage används också för att lagra och hämta data.</p>
+          <div class="title text-white">To-Do Applikation</div>
+          <p class="text-muted">En simpel applikation byggd med vanilla JavaScript som är designad för mobilanvändare. Jag använde mig av the module pattern. Localstorage används också för att lagra och hämta data.</p>
           <a href="projects/todo/index.html" target="_blank"><button class="btn btn-block btn-lg btn-outline-info mt-3">Testa</button></a>
         </div>
         <div class="col-md-4 col-sm-6 text-center mb-5">
-          <img class="mb-3" src="img/canvas.PNG" alt="Partikelsimulation med användning av canvas">
-          <div class="title">Partikelsimulation</div>
-          <p class="text-muted">En partikelsimulation byggd med HTML5 canvas element och vanilla JavaScript. I programmet används kollisionsdetektion och kollisioner och gravitation simuleras. Tryck på space för inställningar.</p>
+          <div class="holder mb-3">
+            <div id="particle-background" class="background">
+              <div id="particle-layer" class="layer"></div>
+            </div>
+          </div>
+          <div class="title text-white">Partikelsimulation</div>
+          <p class="text-muted">En partikelsimulation byggd med HTML5 canvas element och vanilla JavaScript. I programmet används kollisionsdetektion och kollisioner och gravitation simuleras. Tryck på mellanslag för inställningar.</p>
           <a href="projects/particles/index.html" target="_blank"><button class="btn btn-block btn-lg btn-outline-info mt-3">Testa</button></a>
+        </div>
+        <div class="col-md-4 col-sm-6 text-center mb-5">
+          <div class="holder mb-3">
+            <div id="schack-background" class="background">
+              <div id="schack-layer" class="layer"></div>
+            </div>
+          </div>
+          <div class="title text-white">Schack</div>
+          <p class="text-muted">Ett fullständigt schackspel byggd med Java och en objektorienterad approach. Jag programmerade spelet när jag studerade software engineering i USA.</p>
+          <a href="projects/particles/index.html" target="_blank" class="disabled button-anchor"><button class="btn btn-block btn-lg btn-outline-info mt-3 disabled" title="Kan ej visa exemplet här" disabled>Testa</button></a>
         </div>
       </div>
     </div>
