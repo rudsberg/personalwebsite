@@ -12,6 +12,28 @@ a button {
 a:hover {
   cursor: pointer; }
 
+a[data-tool-tip] {
+  position: relative; }
+
+a[data-tool-tip]::after {
+  content: attr(data-tool-tip);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+  background-color: #252A30;
+  white-space: nowrap;
+  font-size: 0.75em;
+  padding: 6px 8px;
+  color: white;
+  border-radius: 7px;
+  transform: scale(0);
+  transition: transform ease-out 150ms, bottom ease-out 150ms; }
+
+a[data-tool-tip]:hover::after {
+  transform: scale(1);
+  bottom: 100%; }
+
 button {
   border-radius: 20px !important;
   border-width: 2px !important;
@@ -68,7 +90,11 @@ button {
     position: relative;
     top: -40px; }
   #hero-section img {
-    width: 200px; }
+    width: 200px;
+    position: relative; }
+    #hero-section img:hover {
+      transform: scale(1.1);
+      transition: transform ease-out 200ms; }
   #hero-section h1 {
     font-size: 1.4rem;
     font-weight: 600;
@@ -81,6 +107,12 @@ button {
 /* ================== New Section ====================== */
 #project-section {
   background-color: #FFF; }
+  #project-section blockquote::before {
+    content: open-quote;
+    font-size: 1.4em; }
+  #project-section blockquote::after {
+    content: close-quote;
+    font-size: 1.4em; }
   #project-section .info-header a {
     border-bottom: 1px #4288DC dotted;
     font-weight: 400; }
@@ -121,12 +153,13 @@ button {
   background-color: #EEE; }
   #pp-section .info-header a {
     border-bottom: 1px #4288DC dotted;
-    font-weight: 400; }
+    font-weight: 400;
+    position: relative; }
     #pp-section .info-header a:hover {
-      color: #FED766;
+      color: #252A30;
       text-decoration: none;
-      border-bottom: 1px #FED766 dotted;
-      transition: all ease-in-out 400ms; }
+      border-bottom: 1px #252A30 dotted;
+      transition: all ease-in-out 150ms; }
   #pp-section button {
     border-color: #FED766;
     color: #252A30;
@@ -265,9 +298,11 @@ button {
     max-width: 630px; } }
 @media (min-width: 768px) {
   #project-section #project-tintin {
-    margin-right: auto; }
+    margin-right: auto;
+    margin-left: initial; }
   #project-section #project-dani {
-    margin-left: auto; }
+    margin-left: auto;
+    margin-right: initial; }
   #project-section .project-text p, #project-section .project-text h3, #project-section .project-text a {
     text-align: left; } }
 @media (min-width: 992px) {

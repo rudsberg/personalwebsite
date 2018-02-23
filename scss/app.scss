@@ -9,6 +9,7 @@ $secondary-color: #EEE; //#466F75
 $contact-color: #FED766;
 $footer-color: #252A30;
 $button-color: #FED766;
+$gray-color: #2F4F4F;
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -21,6 +22,32 @@ a button {
 
 a:hover {
   cursor: pointer;
+}
+
+a[data-tool-tip] {
+  position: relative;
+}
+
+a[data-tool-tip]::after {
+  content: attr(data-tool-tip);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+  background-color: $footer-color;
+  white-space: nowrap;
+  font-size: 0.75em;
+  padding: 6px 8px;
+  color: white;
+  border-radius: 7px;
+  transform: scale(0);
+  transition: transform ease-out 150ms,
+              bottom ease-out 150ms;
+}
+
+a[data-tool-tip]:hover::after {
+  transform: scale(1);
+  bottom: 100%;
 }
 
 button {
@@ -91,6 +118,11 @@ button {
   }
   img {
     width: 200px;
+    position: relative;
+    &:hover {
+      transform: scale(1.1);
+      transition: transform ease-out 200ms;
+    }
   }
   h1 {
     font-size: 1.4rem;
@@ -109,6 +141,14 @@ button {
 #project-section {
   background-color: $primary-color;
 
+  blockquote::before {
+    content: open-quote;
+    font-size: 1.4em;
+  }
+  blockquote::after {
+    content: close-quote;
+    font-size: 1.4em;
+  }
   .info-header {
     a {
       border-bottom: 1px #4288DC dotted;
@@ -167,11 +207,12 @@ button {
     a {
       border-bottom: 1px #4288DC dotted;
       font-weight: 400;
+      position: relative;
       &:hover {
-        color: $button-color;
+        color: $footer-color;
         text-decoration: none;
-        border-bottom: 1px $button-color dotted;
-        transition: all ease-in-out 400ms;
+        border-bottom: 1px $footer-color dotted;
+        transition: all ease-in-out 150ms;
       }
     }
   }
@@ -360,9 +401,11 @@ button {
   #project-section {
     #project-tintin {
       margin-right: auto;
+      margin-left: initial;
     }
     #project-dani {
       margin-left: auto;
+      margin-right: initial;
     }
     .project-text p, .project-text h3, .project-text a {
       text-align: left;
