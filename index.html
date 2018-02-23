@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <!--
-  TODO: fix last-child border problem
-  TODO: lägg till MORE TO COME till projekt OM det blir ojämnt antal på raderna
-  TODO: offset på skills på dattorskärm och uppåt
-
+  Developer: Joel Rudsberg
+  Email: rudsberg@live.se
 -->
 <html lang="en">
 
@@ -11,7 +9,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <meta name="description" content="Joel Rudsbergs personliga hemsida. Joel Rudsberg är en webbutvecklare och programmerare som letar efter sommarjobb 2018.">
+  <title>Joel Rudsberg | Programmerare</title>
   <!-- Font Awesome CDN -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <!-- Bootstrap 4.0.0 -->
@@ -31,7 +30,7 @@
             <div class="col text-center text-white">
               <img src="img/joel-rudsberg-profilbild.jpg" alt="Joel Rudsberg profilbild headshot" class="img-fluid rounded-circle mb-3" id="profilbild">
               <h1 class="mb-3 display-4">Hej, jag bygger hemsidor och annat spännande.<span class="lead d-block mt-2">Jag letar internship sommaren 2018 i Göteborg.</span></h1>
-              <a href="#contact-section" class=""><button class="btn btn-outline-info btn-lg text-white">Kontakta mig</button></a>
+              <a href="#contact-section"><button class="btn btn-outline-info btn-lg text-white">Kontakta mig</button></a>
             </div>
           </div>
         </div>
@@ -40,7 +39,7 @@
   </section>
 
   <!-- PROJECT SECTION -->
-  <section id="project-section" class="pb-5">
+  <section id="project-section" class="pb-4">
     <div class="container">
       <div class="info-header mb-5 text-center">
         <h2 class="text-center display-4 d-block pt-5">Tidigare Arbeten</h2>
@@ -52,10 +51,10 @@
             <img class="img-fluid mx-auto" src="img/mockup-tintin-large-transparent.png" alt="Responsiv och mobilanpassad hemsida av café tintins hemsida.">
           </div>
         </div>
-        <div class="col-md-6 order-md-1 ">
-          <div class="project-text d-flex h-100 w-100 flex-column justify-content-center text-center mr-auto">
+        <div class="col-md-6 order-md-1">
+          <div id="project-tintin" class="project-text d-flex h-100 w-100 flex-column justify-content-center text-center">
             <h3 class="display-4">Café Tintin</h3>
-            <p class="mx-auto text-muted">Café Tintin är ett välkänt café i Göteborg som öppnade för 25 år sedan. Tintins föregående hemsida var uråldrad, ej responsibel och gav en medioker användarupplevelse. Med hjälp av Bootstrap handkodade jag Tintins nya ansikte utåt.</p>
+            <p class="mx-auto text-muted">Café Tintin har varit ett välkänt café i Göteborg  i 25 år. Tintins föregående hemsida var uråldrad, ej responsibel och gav en medioker användarupplevelse. Med hjälp av Bootstrap handkodade jag Tintins nya ansikte utåt.</p>
             <a href="http://tintin.coffee/" target="_blank"><button class="btn btn-outline-info btn-lg mt-3">Besök Hemsida</button></a>
           </div>
         </div>
@@ -78,20 +77,20 @@
           </div>
         </div>
         <div class="col-md-6 order-md-2">
-          <div class="project-text d-flex h-100 w-100 flex-column justify-content-center text-center ml-auto">
+          <div id="project-dani" class="project-text d-flex h-100 w-100 flex-column justify-content-center text-center">
             <h3 class="display-4">Freeride HQ Engelberg</h3>
-            <p class="mx-auto text-muted">Även känt som Okay Shop, är en kultförklarad skidbutik i svensktillhållet Engelberg i de Schweiziska alperna. Under min säsong fick jag äran att ge skidfantasterna en bättre upplevelse på Danis hemsida. Sidan kommer vara live inom några dagar.</p>
+            <p class="mx-auto text-muted">Även känt som Okay Shop, är en kultförklarad skidbutik i svensktillhållet Engelberg i de Schweiziska alperna. Under min säsong fick jag äran att ge skidfantaster en bättre upplevelse på Danis hemsida. Sidan kommer publiceras inom några dagar.</p>
             <a class="disabled" href="http://tintin.coffee/" target="_blank" title="Publiceras om några dagar!"><button class="disabled btn btn-outline-info btn-lg mt-3" disabled>Besök Hemsida</button></a>
           </div>
         </div>
       </div>
-      <div id="testimony" class="row testimony pb-5 pt-5">
+      <div class="row testimony last-testimony pb-5 pt-5">
         <div class="col text-center py-3">
           <blockquote class="quote blockquote">
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum molestias vel, impedit, ipsum voluptas."
+            "Joel did quality work by fulfilling me and my clients need for a simple, clear and good-looking website. I'm very satisfied."
           </blockquote>
           <div class="pt-3">
-            <img src="img/joel-rudsberg-profilbild.jpg" class="img-fluid rounded-circle">
+            <img src="img/dani-friedli.PNG" class="img-fluid rounded-circle">
             <small class="ml-2">Dani Friedli, Ägare, Okay Shop Engelberg</small>
           </div>
         </div>
@@ -134,7 +133,17 @@
             </div>
           </div>
           <div class="title text-white">Schack</div>
-          <p class="text-muted">Ett fullständigt schackspel byggd med Java och en objektorienterad approach. Jag programmerade spelet när jag studerade software engineering i USA.</p>
+          <p class="text-muted">Ett fullständigt schackspel byggd med Java och med en objektorienterad approach. Utvecklingen av GUI gjordes med JavaFX. Jag programmerade spelet när jag studerade software engineering i USA.</p>
+          <a href="projects/particles/index.html" target="_blank" class="disabled button-anchor"><button class="btn btn-block btn-lg btn-outline-info mt-3 disabled" title="Kan ej visa exemplet här" disabled>Testa</button></a>
+        </div>
+        <div id="wind" class="col-md-4 col-sm-6 text-center mb-5">
+          <div class="holder mb-3">
+            <div id="wind-background" class="background">
+              <div id="wind-layer" class="layer"></div>
+            </div>
+          </div>
+          <div class="title text-white">Aerodynamisk Analys</div>
+          <p class="text-muted">Ett analyseringsprogram byggt i Matlab som med data från ett vindtunneltest producerar en simulering av den foil som användes, genererar en tryckkoefficientgraf och visar i vilken angel of attack som ger maximal lyftkraft.</p>
           <a href="projects/particles/index.html" target="_blank" class="disabled button-anchor"><button class="btn btn-block btn-lg btn-outline-info mt-3 disabled" title="Kan ej visa exemplet här" disabled>Testa</button></a>
         </div>
       </div>

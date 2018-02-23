@@ -1,3 +1,8 @@
+/*
+  Developer: Joel Rudsberg
+  Email: rudsberg@live.se
+*/
+
 $nav-color: #343A40;
 $primary-color: #FFF; // #36595e
 $secondary-color: #EEE; //#466F75
@@ -58,7 +63,7 @@ button {
 /* ==================== HERO SECTION ==================== */
 
 #hero-section {
-  background-image: url("../img/desktop3.jpeg");
+  background-image: url("../img/desktop-reduced.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -137,7 +142,7 @@ button {
   .project {
     box-shadow: 0px 24px 3px -24px #ddd;
   }
-  .testimony {
+  .testimony:not(.last-testimony) {
     box-shadow: 0px 24px 3px -24px #ddd;
   }
   .testimony blockquote {
@@ -149,9 +154,9 @@ button {
   }
   .testimony img {
     width: 70px;
+    height: 70px;
   }
 }
-
 
 /* ================== New Section ====================== */
 
@@ -186,6 +191,19 @@ button {
   }
   .row {
     position: relative;
+    .col-md-4 {
+      position: relative;
+    }
+    p {
+      margin-bottom: 60px;
+    }
+    a {
+      position: absolute;
+      display: block;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
   }
   .row .col-sm-6 {
     max-width: 300px;
@@ -234,6 +252,17 @@ button {
   }
   #schack-layer {
     background-color: rgba(206, 110, 85, 0.7);
+  }
+  #wind-background {
+    background: url('../img/windtunnel.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  #wind-layer {
+    background-color: rgba(92, 192, 145, 0.7);
+  }
+  #wind .title {
+    font-size: 1.25rem;
   }
   button {
     max-width: 260px;
@@ -329,6 +358,12 @@ button {
 
 @media (min-width: 768px) {
   #project-section {
+    #project-tintin {
+      margin-right: auto;
+    }
+    #project-dani {
+      margin-left: auto;
+    }
     .project-text p, .project-text h3, .project-text a {
       text-align: left;
     }

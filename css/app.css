@@ -1,3 +1,7 @@
+/*
+  Developer: Joel Rudsberg
+  Email: rudsberg@live.se
+*/
 body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased; }
@@ -41,7 +45,7 @@ button {
 
 /* ==================== HERO SECTION ==================== */
 #hero-section {
-  background-image: url("../img/desktop3.jpeg");
+  background-image: url("../img/desktop-reduced.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -101,7 +105,7 @@ button {
     max-width: 430px; }
   #project-section .project {
     box-shadow: 0px 24px 3px -24px #ddd; }
-  #project-section .testimony {
+  #project-section .testimony:not(.last-testimony) {
     box-shadow: 0px 24px 3px -24px #ddd; }
   #project-section .testimony blockquote {
     max-width: 600px;
@@ -109,7 +113,8 @@ button {
   #project-section #testimony {
     box-shadow: none !important; }
   #project-section .testimony img {
-    width: 70px; }
+    width: 70px;
+    height: 70px; }
 
 /* ================== New Section ====================== */
 #pp-section {
@@ -135,6 +140,16 @@ button {
     text-decoration: none !important; }
   #pp-section .row {
     position: relative; }
+    #pp-section .row .col-md-4 {
+      position: relative; }
+    #pp-section .row p {
+      margin-bottom: 60px; }
+    #pp-section .row a {
+      position: absolute;
+      display: block;
+      bottom: 0;
+      left: 0;
+      right: 0; }
   #pp-section .row .col-sm-6 {
     max-width: 300px;
     margin: 0 auto; }
@@ -173,6 +188,14 @@ button {
     background-repeat: no-repeat; }
   #pp-section #schack-layer {
     background-color: rgba(206, 110, 85, 0.7); }
+  #pp-section #wind-background {
+    background: url("../img/windtunnel.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat; }
+  #pp-section #wind-layer {
+    background-color: rgba(92, 192, 145, 0.7); }
+  #pp-section #wind .title {
+    font-size: 1.25rem; }
   #pp-section button {
     max-width: 260px;
     margin: 0 auto; }
@@ -241,6 +264,10 @@ button {
   #contact-section .info-header {
     max-width: 630px; } }
 @media (min-width: 768px) {
+  #project-section #project-tintin {
+    margin-right: auto; }
+  #project-section #project-dani {
+    margin-left: auto; }
   #project-section .project-text p, #project-section .project-text h3, #project-section .project-text a {
     text-align: left; } }
 @media (min-width: 992px) {
