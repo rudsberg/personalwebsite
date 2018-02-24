@@ -4702,7 +4702,7 @@ button {
   border-bottom: 1px #ddd solid; }
 
 .info-header h2 {
-  font-size: 2.4rem;
+  font-size: 1.9rem;
   font-weight: 600; }
 
 .info-header p {
@@ -4737,6 +4737,10 @@ button {
     width: 100%;
     min-height: 100vh; }
   #hero-section .col {
+    max-width: 650px;
+    position: relative;
+    top: -40px; }
+  #hero-section .col-sm-12 {
     max-width: 650px;
     position: relative;
     top: -40px; }
@@ -4798,7 +4802,7 @@ button {
     width: 70px;
     height: 70px; }
 
-/* ================== New Section ====================== */
+/* ================== Personal Projects Section ====================== */
 #pp-section {
   background-color: #EEE; }
   #pp-section .info-header a {
@@ -4932,6 +4936,9 @@ button {
       transition: all ease-in-out 300ms;
       transform: scale(1.1); }
 
+@media (min-width: 400px) {
+  .info-header h2 {
+    font-size: 2.4rem; } }
 @media (min-width: 576px) {
   #hero-section h1 {
     font-size: 1.65rem;
