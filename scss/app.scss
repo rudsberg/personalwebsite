@@ -57,6 +57,7 @@ $footer-color: #252A30;
 $button-color: #FED766;
 $gray-color: #2F4F4F;
 
+
 body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -164,7 +165,6 @@ button {
   }
   img {
     width: 200px;
-    position: relative;
     &:hover {
       transform: scale(1.1);
       transition: transform ease-out 200ms;

@@ -23,7 +23,7 @@ const c = canvas.getContext('2d');
 
 // Disregard namespace in this project => only 1 script file used
 let particleArray;
-let numParticles = 200;
+let numParticles;
 let gravityConstant = 0.2;
 let friction = 0.45;
 let userControlledEngaged = false;
@@ -43,6 +43,16 @@ let mouse = {
   x: undefined,
   y: undefined
 };
+
+// If mobile device use less particles
+let screenWidthUser = window.innerWidth;
+if (screenWidthUser < 500) {
+  numParticles = 50;
+} else if (screenWidthUser < 900) {
+  numParticles = 70;
+} else {
+  numParticles = 175;
+}
 
 // Listen for window resize and respawn particles
 window.addEventListener('resize', () => {
